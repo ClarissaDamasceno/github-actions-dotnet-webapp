@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  pull-request:
+  pull_request:
     branches:
       - main
   schedule:
@@ -24,4 +24,3 @@ jobs:
       run: dotnet restore **/*.csproj
     - name: Build
       run: dotnet build **/*.csproj --no-restore
-      
